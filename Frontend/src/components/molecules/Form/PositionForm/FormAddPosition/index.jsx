@@ -131,6 +131,7 @@ const FormAddPosition = () => {
                                             value={baseSalary}
                                             onChange={handleChange}
                                             required
+                                            min="0"
                                             placeholder='Enter base salary'
                                             className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary'
                                         />
@@ -149,6 +150,7 @@ const FormAddPosition = () => {
                                             value={transportAllowance}
                                             onChange={handleChange}
                                             required
+                                            min="0"
                                             placeholder='Enter transport allowance'
                                             className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary'
                                         />
@@ -165,6 +167,7 @@ const FormAddPosition = () => {
                                             value={mealAllowance}
                                             onChange={handleChange}
                                             required
+                                            min="0"
                                             placeholder='Enter meal allowance'
                                             className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary'
                                         />
@@ -172,12 +175,10 @@ const FormAddPosition = () => {
                                 </div>
 
                                 <div className='flex flex-col md:flex-row w-full gap-3 text-center'>
-                                    <div>
-                                        <ButtonOne>
-                                            <span>Save</span>
-                                        </ButtonOne>
-                                    </div>
-                                    <Link to="/data-position" >
+                                    <ButtonOne type='submit'>
+                                        <span>Submit</span>
+                                    </ButtonOne>
+                                    <Link to="/master-data/positions">
                                         <ButtonTwo>
                                             <span>Back</span>
                                         </ButtonTwo>

@@ -1,6 +1,6 @@
 import React from "react";
-import LogoSipeka from "../../assets/images/logo/logo-sipeka.png";
-import LoginImg from "../../assets/images/LoginImg/login.svg";
+import LogoSipeka from "../../Assets/images/logo/logo-sipeka.png";
+import LoginImg from "../../Assets/images/LoginImg/login.svg";
 import { Footer, LoginInput, Navbar } from "../../components";
 
 function Login() {
@@ -19,7 +19,7 @@ function Login() {
               />
             </span>
             <p className="text-black dark:text-white 2xl:px-20">
-              Sistem Penggajian Karyawan Online
+              Online Employee Payroll System
               <br /> PT. Humpuss Karbometil Selulosa
             </p>
             <img className="mt-15 inline-block" src={LoginImg} alt="Logo" />
